@@ -38,12 +38,12 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('imagenes/Polos.jpg','imagenes/animales.jpg')">
 <!--Principal -->
 <div data-role="page" id="Principal" data-theme="a">
    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
      <h1>Dia de la Tierra</h1>
-    </div>
+  </div>
     
     <div data-role="main" class="ui-content">
          <div data-role="collapsible" data-content-theme="false">
@@ -126,14 +126,15 @@ function MM_swapImage() { //v3.0
       
       <h3> -Derretimiento de los Glaciares- </h3>
       <p> Dl derretimiento de los glaciares está provocando grandes cambios en las condiciones climáticas y biológicas de nuestro planeta, al aumentar los niveles de la superficies de agua y reducir las áreas habitables. Estudios recientes han determinado que tanto en la Antártida como en el Océano Ártico el derretimiento del hielo glaciar se ha acelerado y alcanza actualmente un ritmo sin precedentes.</p>
-     <center>
-         <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','imagenes/polos.jpg',1)"><img src="imagenes/osopoloar.jpg" width="327" height="225" id="Image4" /></a></p>
-         </center>
+  
       <p> De continuar el incremento de la velocidad de deshielo, el planeta perdería buena parte de su superficie habitable, generando varios conflictos, esto sumado a los cambios -que aún se investigan- en las condiciones de vida de todos los organismos del planeta, que alteran ecosistemas y la biósfera en general. </p>
+      <img src="imagenes/osopoloar.jpg" width="50%" height="50%">
       
      <h3> -Gran Número de Especies en Extinción- </h3>
      <p> En el mundo se pierden cientos de miles de especies, muchas de ellas aún antes de ser descubiertas por la ciencia. De ese modo, no sólo se pierde  la variabilidad biológica, sino además la diversidad genética, fuente de sustento para las generaciones futuras. Una especie en peligro de extinción es la que puede extinguirse en un futuro próximo. A través de la historia de la evolución, millones de especies han desaparecido debido a procesos naturales. En los últimos 300 años, sin embargo, los humanos han multiplicado la tasa de extinción por mil.</p>
-     <img src="imagenes/Animal_Extinction.jpg" width="50%" height="50%" >
+     <center>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/animales.jpg',1)"><img src="imagenes/Animal_Extinction.jpg" width="400" height="400" id="Image20"></a>
+     </center>
      <p> La degradación del hábitat es actualmente la principal causa antropogénica de extinción de especies. La principal causa de la degradación del hábitat en todo el mundo es la agricultura, con la expansión urbana, la tala, la minería y algunas prácticas de pesca siguiendo en importancia como causas de extinción de especies.</p>
      
     </div>
@@ -191,7 +192,7 @@ function MM_swapImage() { //v3.0
      <p>Comprar agua embotellada es innecesario. Compra una botella de vidrio o metal y llénala con agua.</p>
       <img src="imagenes/botellas.jpg" width="30%" height="30%">
     </div>
-    </div>
+  </div>
     <div data-role="footer" data-theme="a"  data-position="fixed">
        <center>
        <img src="res/android/mdpi.png" width="50" height="50">
@@ -200,7 +201,7 @@ function MM_swapImage() { //v3.0
        <h4> Aplicacion Cinco </h4>
        <h4> María Fernanda Salazar Sánchez </h4>
     </div>
-  </div>
+</div>
 <!--pagina 2 -->
 
 <!--Pagina 3 -->
@@ -219,7 +220,7 @@ function MM_swapImage() { //v3.0
 
    
     </div>
-    </div>
+  </div>
     <div data-role="footer" data-theme="a"  data-position="fixed">
        <center>
        <img src="res/android/mdpi.png" width="50" height="50">
@@ -228,7 +229,7 @@ function MM_swapImage() { //v3.0
        <h4> Aplicacion Cinco </h4>
        <h4> María Fernanda Salazar Sánchez </h4>
     </div>
-  </div>
+</div>
   <!--Pagina 3-->
   
 </body>
