@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quinta Aplicación</title>
+
+<!--grupo CSS -->
+<link rel="stylesheet" href="css/temapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+<!--Principal -->
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Dia de la Tierra</h1>
+    </div>
+    
+    <div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+           <h1>¿Qué es el Día de la Tierra?</h1>
+         <div>
+          <center>
+           <p>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos</p>
+           <img src="imagenes/DiaDeLaTierra.jpg" width:"50%" height="20%">
+           </center>
+         </div>
+       </div>
+     
+         <div data-role="collapsible" data-content-theme="false">
+           <h1>Importancia del 22 de Abril</h1>
+         <div>
+           <p> Gaylord Nelson escogió la fecha de tal manera que se maximizara la participación en las universidades, ya que lo consideraba un encuentro entre maestros y alumnos. Determinó que la semana del 19 al 25 de abril era la mejor apuesta, ya que esta no coincidía con los exámenes o las vacaciones de primavera.8 Más aún, esta fecha no tenía ningún conflicto con celebraciones religiosas como la Pascua o el Pésaj, y era demasiado tarde en primavera para tener un clima decente. Más estudiantes preferirían estar en clase y habría menos competencia con otros eventos de media semana así que eligió el miércoles 22 de abril.</p>
+          <center>
+         <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','imagenes/diadelatierrasos.jpg',1)"><img src="imagenes/planetatierra.jpg" width="327" height="225" id="Image2" /></a></p>
+         </center>
+         </div>
+       </div>
+       
+<br>
+    
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> Cambios que ha Sufrido el Planeta </h2>
+      </a>
+    </li>
+    
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>¿Que debemos hacer para ayudar a nuestro planeta?</h2>
+       </a>
+    </li>
+    
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>¡Reflexiona!</h2>
+       </a>
+    </li>
+    
+  </ul>
+</div>
+</div><!--main -->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+      <img src="res/android/mdpi.png" width="50" height="50">
+   </div>
+   <div>
+      <h4> Dia de la Tierra </h4>
+      <h4> Aplicacion Cinco</h4>
+      <h4> María Fernanda Salazar Sánchez </h4>
+   </div>
+</div>
+</div>
+</div> <!-- div page -->
+<!--Principal -->
+<!--pagina 1 -->
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1> Cambios en nuestro Planeta </h1>
+     </div>
+    <div data-role="main" class="ui-content" align="center">
+     <div>
+    <h3>-Calentamiento Global-</h3>
+      <p>El Calentamiento Global es un aumento de la temperatura de la atmósfera terrestre que se ha estado observando desde finales del siglo XIX. Se ha observado un aumento de aproximadamente 0.8 ºC desde que se realizan mediciones confiables, dos tercios de este aumento desde 1980. Hay una certeza del 90% (actualizada a 95% en el 2013) de que la causa del calentamiento es el aumento de gases de efecto invernadero que resultan de las actividades humanas como la quema de combustibles fósiles (carbón, gasolina, gas natural y petróleo) y la deforestación.</p>
+       <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','imagenes/calentamiento.gif',1)"><img src="imagenes/efectoinvernadero.jpg" width="327" height="225" id="Image3" /></a></p>
+      <br>
+      
+      <h3> -Aumento del Nivel del Mar- </h3>
+      <p> Las mediciones por satélite demuestran que a lo largo del siglo pasado, el Nivel Medio del Mar (GMSL, por sus siglas en inglés) aumentó entre 10 y 20 centímetros. Sin embargo, la tasa anual de aumento durante los últimos 20 años ha sido de 3,2 milímetros, más o menos el doble de la velocidad media de los 80 años precedentes. </p>
+      <p> Durante el siglo pasado, la quema de combustibles fósiles y otras actividades humanas y naturales liberaron en la atmósfera enormes cantidades de gases que atrapan el calor. Estas emisiones han provocado que la temperatura de la superficie de la Tierra haya aumentado y que los océanos hayan absorbido alrededor de un 80 por cierto de este calor adicional. </p>
+      <img src="imagenes/infografia.png" width="30%" height="20%">
+      <p> Cuando el nivel del mar se eleva con rapidez, tal y como ha estado haciéndolo en los últimos tiempos, incluso un pequeño aumento puede tener consecuencias devastadoras en los hábitats costeros. El agua de mar penetra en zonas cada vez más alejadas de la costa, lo cual puede generar consecuencias catastróficas como la erosión, las inundación de humedales, la contaminación de acuíferos y de suelo agrícola, y la pérdida del hábitat de peces, pájaros y plantas. </p>
+      
+      <h3> -Derretimiento de los Glaciares- </h3>
+      <p> Dl derretimiento de los glaciares está provocando grandes cambios en las condiciones climáticas y biológicas de nuestro planeta, al aumentar los niveles de la superficies de agua y reducir las áreas habitables. Estudios recientes han determinado que tanto en la Antártida como en el Océano Ártico el derretimiento del hielo glaciar se ha acelerado y alcanza actualmente un ritmo sin precedentes.</p>
+     <center>
+         <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','imagenes/polos.jpg',1)"><img src="imagenes/osopoloar.jpg" width="327" height="225" id="Image4" /></a></p>
+         </center>
+      <p> De continuar el incremento de la velocidad de deshielo, el planeta perdería buena parte de su superficie habitable, generando varios conflictos, esto sumado a los cambios -que aún se investigan- en las condiciones de vida de todos los organismos del planeta, que alteran ecosistemas y la biósfera en general. </p>
+      
+     <h3> -Gran Número de Especies en Extinción- </h3>
+     <p> En el mundo se pierden cientos de miles de especies, muchas de ellas aún antes de ser descubiertas por la ciencia. De ese modo, no sólo se pierde  la variabilidad biológica, sino además la diversidad genética, fuente de sustento para las generaciones futuras. Una especie en peligro de extinción es la que puede extinguirse en un futuro próximo. A través de la historia de la evolución, millones de especies han desaparecido debido a procesos naturales. En los últimos 300 años, sin embargo, los humanos han multiplicado la tasa de extinción por mil.</p>
+     <img src="imagenes/Animal_Extinction.jpg">
+     <p> La degradación del hábitat es actualmente la principal causa antropogénica de extinción de especies. La principal causa de la degradación del hábitat en todo el mundo es la agricultura, con la expansión urbana, la tala, la minería y algunas prácticas de pesca siguiendo en importancia como causas de extinción de especies.</p>
+     
+     <h3><a href="https://giovannamarrero.wordpress.com/2009/05/03/%C2%BFque-podemos-hacer-para-salvar-el-planeta/"> ¡Tu Tambén Puedes Ayudar a Salvar el Planeta!...</a></h3>
+    </div>
+    </div><!--main -->
+    <div data-role="footer" data-theme="a" data-position="fixed">
+    <center>
+    <div>
+      <img src="res/android/mdpi.png" width="50" height="50">
+   </div>
+   <div>
+      <h4> Dia de la Tierra </h4>
+      <h4> Aplicacion Cinco</h4>
+      <h4> María Fernanda Salazar Sánchez </h4>
+     </div>
+   </div>
+</center>
+</div>
+<!--pagina 1 -->
+
+<!--pagina 2 -->
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1> Sigue Estos Sencillos Pasos...</h1>
+   </div>
+   <div data-role="main" class="ui-content" align="center">
+    <div>
+     <h3> 1.- Apaga todo lo que requiera energía cuando no lo uses. </h3>
+     <p>Si no lo estás usando, apágalo. Esto comprende a las luces, los televisores, las computadoras, las impresoras, etc..</p>
+      <img src="imagenes/apagalaluz.jpg" width="30%" height="30%">
+     <h3> 2.- Desenchufa los aparatos siempre que sea posible</h3>
+     <p> Dejar los aparatos enchufados (como los cargadores de laptops o los tostadores) puede consumir energía “fantasma”. Un aparato puede seguir consumiendo energía incluso si está apagado.Lo mejor es desenchufar todo lo que no vayas a usar en las próximas 36 horas (o más).</p>
+      <img src="imagenes/desenchufa.jpg"  width="30%" height="30%">   
+     <h3> 3.- Ahorra Agua</h3>
+     <p> En los EE.UU., la familia promedio con cuatro integrantes consume aproximadamente 1500 L (400 galones) de agua al día. Toma decisiones conscientes para reducir tu consumo de agua.</p>
+      <img src="imagenes/ahorragua.jpg" width="30%" height="30%">
+     <h3> 4.- Recicla todo lo que puedas.</h3>
+     <p>Si cuentas con un servicio de recolección de objetos reciclables, úsalo. Asegúrate de separar los objetos reciclables en objetos de vidrio, metal, papel, etc.</p>
+      <img src="imagenes/recicla.jpg" width="30%" height="30%">
+     <h3> 5.- Evita el uso de artículos desechables. </h3>
+     <p>Todo lo que uses solo un par de veces y luego deseches consume recursos y pasará siglos en un basurero.</p>
+      <img src="imagenes/desechables.jpg" width="30%" height="30%">
+     <h3> 6.- Usa solo la cantidad necesaria de papel higiénico </h3>
+     <p>No uses demasiado solo para una pequeña limpieza, sé razonable. También usa el papel toalla con moderación y realiza la mayor parte de la limpieza de tu cocina con un paño lavable o una esponja.</p> 
+      <img src="imagenes/papel.jpg" width="30%" height="30%">
+     <h3> 7.-Usa el transporte público </h3>
+     <p>Si vives en un área que cuenta con un sistema de autobuses, tren ligero o metro, considera usar estas opciones para ir al trabajo, la escuela o algún otro destino.</p>
+      <img src="imagenes/transporte.jpg" width="30%" height="30%">
+     <h3> 8.-Evita el exceso de empaques</h3>
+     <p>Con frecuencia, las compañías de alimentos invierten en la creación de empaques la misma energía que usan para producir el propio alimento. Trata de no comprar alimentos con empaques individuales.</p>
+      <img src="imagenes/empaques.jpg" width="30%" height="30%">
+     <h3>9.- Compra alimentos locales. </h3>
+     <p> Comprar alimentos suministrados en tu localidad ayudará a eliminar o reducir el impacto que genera el transporte.</p>
+      <img src="imagenes/comidalocal.jpg" width="30%" height="30%">
+     <h3> 10.- Usa botellas reutilizables para tomar agua. </h3>
+     <p>Comprar agua embotellada es innecesario. Compra una botella de vidrio o metal y llénala con agua.</p>
+      <img src="imagenes/botellas.jpg" width="30%" height="30%">
+    </div>
+    </div>
+    <div data-role="footer" data-theme="a"  data-position="fixed">
+       <center>
+       <img src="res/android/mdpi.png" width="50" height="50">
+       </center>
+       <h4> Dia de la Tierra </h4>
+       <h4> Aplicacion Cinco </h4>
+       <h4> María Fernanda Salazar Sánchez </h4>
+    </div>
+  </div>
+<!--pagina 2 -->
+
+<!--Pagina 3 -->
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Reflexiona...</h1>
+   </div>
+   <div data-role="main" class="ui-content" align="center">
+    <div>
+     <p>Es importante tener una conciencia ecológica, pero lo primero que debemos hacer para contar con ella es darnos cuenta de qué es la naturaleza en realidad, hay mucha gente que desea hacer algo por la Tierra, por la naturaleza, los animales, etc, pero las campañas ecologistas no pueden ganar esta lucha solas, necesitan de la cooperación de todos nosotros. Por ello es importante destacar que para que esto se logre es necesario concientizar nuestros actos y tener una verdadera voluntad de cambiar en algo las injusticias que cometemos con nuestro Planeta.</p>
+     <p>Si quieres ver un cambio, primero debes cambiar tu y la mejor manera de hacerlo es no tirando basura en las calles de tu comunidad, el cambio empieza por uno.</p>
+     <p>El planeta es de TODOS y tenemos que recordar que solo tenemos uno y es importante perservarlo y ciudarlo </p>
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:978px;height:402px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+   
+    </div>
+    </div>
+    <div data-role="footer" data-theme="a"  data-position="fixed">
+       <center>
+       <img src="res/android/mdpi.png" width="50" height="50">
+       </center>
+       <h4> Dia de la Tierra </h4>
+       <h4> Aplicacion Cinco </h4>
+       <h4> María Fernanda Salazar Sánchez </h4>
+    </div>
+  </div>
+  <!--Pagina 3-->
+  
+</body>
+</html>
